@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
-@base{
+@theme {
     --font-heading: 'Manrope', sans-serif;
+    --border-light-gray: #EBEBEB;
+
 }

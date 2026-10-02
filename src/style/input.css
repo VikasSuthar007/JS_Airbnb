@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+@base{
+    --font-heading: 'Manrope', sans-serif;
+}

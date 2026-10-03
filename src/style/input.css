@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-    --font-heading: 'Manrope', sans-serif;
-    --border-light-gray: #EBEBEB;
-
+  --font-heading: "Manrope", sans-serif;
+  --color-light-gray: #ebebeb;
+  --color-dark-pink: #dc1e52;
 }

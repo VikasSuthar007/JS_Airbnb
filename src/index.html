@@ -33,29 +33,30 @@
   </head>
   <body>
     <nav class="w-full flex justify-between items-center py-5 px-11 bg-white border-b-2 border-light-gray">
-      <div>
+      <div class="flex flex-1">
         <img src="/src/image/Airbnb_Logo_Bélo.svg" alt="logo" class="w-26" />
       </div>
       <!-- Logo end-->
-
-      <div
-        class="flex pl-4 pr-2 py-1.5 border-2 border-light-gray shadow-sm shadow-blur rounded-full items-center text-sm font-heading font-bold hover:shadow-lg duration-100"
-      >
-        <div class="flex items-center border-r-2 border-light-gray h-8 cursor-pointer">
-          <div><img src="/src/image/Anywhere.png" class="w-8" alt="Anywhere" /></div>
-          <a class="flex items-center pr-4 pl-2">Anywhere</a>
-        </div>
-        <div class="h-8 flex items-center border-r-2 border-light-gray cursor-pointer">
-          <div><a class="pl-4 pr-4">Anytime</a></div>
-        </div>
-        <div class="pl-4 pr-4 cursor-pointer"><a>Add guests</a></div>
-        <div class="pr-0.4 py-2 w-8 h-8 rounded-full flex items-center justify-center bg-dark-pink text-white cursor-pointer">
-          <i class="ph-bold ph-magnifying-glass"></i>
+      <div class="flex flex-2 justify-center">
+        <div
+          class="flex pl-4 pr-2 py-1.5 border-2 border-light-gray shadow-sm shadow-blur rounded-full items-center text-sm font-heading font-bold hover:shadow-lg duration-100"
+        >
+          <div class="flex items-center border-r-2 border-light-gray h-8 cursor-pointer">
+            <div><img src="/src/image/Anywhere.png" class="w-8" alt="Anywhere" /></div>
+            <a class="flex items-center pr-4 pl-2">Anywhere</a>
+          </div>
+          <div class="h-8 flex items-center border-r-2 border-light-gray cursor-pointer">
+            <div><a class="pl-4 pr-4">Anytime</a></div>
+          </div>
+          <div class="pl-4 pr-4 cursor-pointer"><a>Add guests</a></div>
+          <div class="pr-0.4 py-2 w-8 h-8 rounded-full flex items-center justify-center bg-dark-pink text-white cursor-pointer">
+            <i class="ph-bold ph-magnifying-glass"></i>
+          </div>
         </div>
       </div>
       <!-- navigation item end-->
 
-      <div class="flex items-center gap-2.5">
+      <div class="flex flex-1 items-center justify-end gap-2.5">
         <!--- Become a host --->
         <button class="py-2 px-4 rounded-full hover:bg-white-2 font-medium text-heading duration-100 cursor-pointer text-black-1">
           Become a host
@@ -78,7 +79,7 @@
     </nav>
 
     <!---- Property title and images --->
-    <div class="flex flex-col w-full px-50">
+    <div class="flex flex-col px-20 max-w-[1280px] mx-auto">
       <!--- title and share controles---->
       <div class="w-full flex items-center pt-4">
         <div class="flex-1"><p class="font-bold text-2xl font-heading">Villa Mehfil | 3BR Private Pool, Bar & Garden</p></div>
@@ -100,14 +101,39 @@
       <!------ title and share controles end ------------>
 
       <!---- Property images ---->
-      <div class="w-full h-[520px] pt-5">
+      <div class="relative w-full h-[520px] pt-5">
         <div class="w-full h-full grid grid-cols-[2fr_1fr_1fr] grid-rows-2 gap-2 rounded-xl overflow-hidden">
-          <div class="row-span-2"><img src="image/1.avif" alt="image_1" class="h-full w-full object-cover" /></div>
-          <div><img src="image/2.avif" alt="image_2" class="h-full w-full object-cover" /></div>
-          <div><img src="image/3.avif" alt="image_3" class="h-full w-full object-cover" /></div>
-          <div><img src="image/4.avif" alt="image_4" class="h-full w-full object-cover" /></div>
-          <div><img src="image/5.avif" alt="image_5" class="h-full w-full object-cover" /></div>
+          <div class="row-span-2 relative group cursor-pointer overflow-hidden">
+            <img src="image/1.avif" alt="image_1" class="h-full w-full object-cover" />
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition duration-100"></div>
+          </div>
+          <div class="relative group cursor-pointer overflow-hidden">
+            <img src="image/2.avif" alt="image_2" class="h-full w-full object-cover" />
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition duration-100"></div>
+          </div>
+          <div class="relative group cursor-pointer overflow-hidden">
+            <img src="image/3.avif" alt="image_3" class="h-full w-full object-cover" />
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition duration-100"></div>
+          </div>
+          <div class="relative group cursor-pointer overflow-hidden">
+            <img src="image/4.avif" alt="image_4" class="h-full w-full object-cover" />
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition duration-100"></div>
+          </div>
+          <div class="relative group cursor-pointer overflow-hidden">
+            <img src="image/5.avif" alt="image_5" class="h-full w-full object-cover" />
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition duration-100"></div>
+          </div>
         </div>
+        <!---Show all photos button -->
+
+        <button
+          class="absolute bottom-7 right-7 flex gap-1 items-center justify-center px-4 py-1 rounded-lg bg-white-1 hover:bg-light-gray color-light-gray cursor-pointer"
+        >
+          <div class="text-xl"><i class="ph-bold ph-dots-nine"></i></div>
+          <p class="text-sm font-medium">Show all photos</p>
+        </button>
+
+        <!---Show all photos button end-->
       </div>
       <!---- Property images end ---->
     </div>

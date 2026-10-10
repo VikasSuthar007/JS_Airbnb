@@ -79,7 +79,7 @@
     </nav>
 
     <!---- Property title and images --->
-    <div class="flex flex-col px-20 max-w-[1280px] mx-auto">
+    <div class="flex flex-col md:px-10 lg:px-20 max-w-[1280px] mx-auto ">
       <!--- title and share controles---->
       <div class="w-full flex items-center pt-4">
         <div class="flex-1"><p class="font-bold text-2xl font-heading">Villa Mehfil | 3BR Private Pool, Bar & Garden</p></div>
@@ -101,7 +101,7 @@
       <!------ title and share controles end ------------>
 
       <!---- Property images ---->
-      <div class="relative w-full h-[520px] pt-5">
+      <div class="relative w-full h-[520px] md:h-90 lg:h-100 2xl:h-full pt-5">
         <div class="w-full h-full grid grid-cols-[2fr_1fr_1fr] grid-rows-2 gap-2 rounded-xl overflow-hidden">
           <div class="row-span-2 relative group cursor-pointer overflow-hidden">
             <img src="image/1.avif" alt="image_1" class="h-full w-full object-cover" />
@@ -144,12 +144,45 @@
     <!----- Proeperty details and pricing --------------------------------------------->
     <div class="flex max-w-[1280px] mx-auto px-20">
     <!---- Property details -------------------------->  
-    <div class="flex flex-2 py-6">
-      <div class="flex flex-col ">
+    <div class="flex flex-2 flex-col">
+      <!-- Title -->
+      <div class="flex flex-col py-6">
         <p class="font-bold text-xl font-heading text-black-1">Entire home in Lonavala, India</p>
         <p class="flex items-center gap-1 font-heading">8 guests <span>·</span> 3 bedrooms <span>·</span> 3 beds <span>·</span> 4 bathrooms</p>
       </div>
-    </div>`
+      <!-- Title end -->
+
+      <div class="flex items-center justtify-center px-7 py-6 border gap-6 border-light-gray-1 rounded-xl">
+        <!--- BAdge-->
+        <div class="flex items-center gap-6">
+          <div class="max-w-32"><img src="image/Badge.svg" alt="Badge"></div>
+          <div>
+            <p class="font-heading text-sm leading-[126%] font-semibold text-black-1">One of the most loved homes on Airbnb, according to guests</p>
+          </div>
+        </div>
+
+        <!----Rating----->
+        <div class="flex flex-col items-center justify-center">
+          <p class="font-semibold text-lg font-heading text-black-1">4.9</p>
+          <div class="flex items-center justify-center">
+            <div class="text-xs"><i class="ph-fill ph-star"></i></div>
+            <div class="text-xs"><i class="ph-fill ph-star"></i></div>
+            <div class="text-xs"><i class="ph-fill ph-star"></i></div>
+            <div class="text-xs"><i class="ph-fill ph-star"></i></div>
+          </div>
+        </div>
+        <div class="h-full border border-light-gray"></div>
+
+        <!----Reviews----->
+        <div class="flex flex-col items-center justify-center">
+          <p class="font-semibold text-lg font-heading text-black-1">21</p>
+          <p class="font-heading text-xs font-semibold">Reviews</p>
+      </div>
+      </div>
+      <!-- Badge  and review end -->
+
+    
+    </div>
     <!---Property details end------------------------->
     
     <!---- Pricing section --------------------------->
@@ -157,10 +190,9 @@
       <p>Pricing section</p>
     </div>
     <!---- Pricing section end ----------------------->
-    </div>
     <!----- Proeperty details and pricing end-------------------------------------------->
 
-
+    
 
   </body>
 </html>

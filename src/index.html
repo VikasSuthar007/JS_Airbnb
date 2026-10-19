@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/duotone/style.css" />
     <script src="app.js" defer></script>
   </head>
-  <body>
+  <body class="font-heading">
     <nav class="w-full flex justify-between items-center py-5 px-11 bg-white border-b-2 border-light-gray">
       <div class="flex flex-1">
         <img src="/src/image/Airbnb_Logo_Bélo.svg" alt="logo" class="w-26" />
@@ -58,7 +58,7 @@
 
       <div class="flex flex-1 items-center justify-end gap-2.5">
         <!--- Become a host --->
-        <button class="py-2 px-4 rounded-full hover:bg-white-2 font-medium text-heading duration-100 cursor-pointer text-black-1">
+        <button class="py-2 px-4 rounded-full hover:bg-white-2 font-bold text-sm duration-100 cursor-pointer text-black-1">
           Become a host
         </button>
         <!--- Become a host end--->
@@ -130,7 +130,7 @@
           class="absolute bottom-7 right-7 flex gap-1 items-center justify-center px-4 py-1 rounded-lg bg-white-1 hover:bg-light-gray color-light-gray cursor-pointer"
         >
           <div class="text-xl"><i class="ph-bold ph-dots-nine"></i></div>
-          <p class="text-sm font-medium">Show all photos</p>
+          <p class="text-sm font-semibold">Show all photos</p>
         </button>
 
         <!---Show all photos button end-->
@@ -182,7 +182,7 @@
       <!-- Badge  and review end -->
 
       <!---- Hosted --->
-      <div class="flex gap-6 mt-10 pb-4 border-b border-black-1/10">
+      <div class="flex gap-6 mt-8 py-6 border-b border-t border-black-1/10">
         <div class="relative">
           <img src="image/Profile.avif" alt="hosted" class="w-10 rounded-full">
           <img src="image/a.svg" alt="profile badge" class="w-4 absolute bottom-0 right-0">
@@ -196,7 +196,7 @@
       <!---- Hosted end--->
 
       <!---- Property Features ----->
-      <div class="w-full flex flex-col gap-6 py-8 font-heading">
+      <div class="w-full flex flex-col gap-6 py-8 font-heading border-b border-black-1/10">
         <!----- First------>
          <div class="flex gap-6">
               <div><img src="image/www.airbnb.co.in-12.svg" alt="Fire icon" class="w-6"></div>
@@ -208,7 +208,7 @@
          <!---- First End ---->
         <!----- Second------>
          <div class="flex gap-6">
-              <div><img src="image/www.airbnb.co.in-12.svg" alt="Fire icon" class="w-6"></div>
+              <div><img src="image/www.airbnb.co.in-13.svg" alt="Fire icon" class="w-6"></div>
               <div class="flex flex-col text-sm gap-0.5">
                     <p class="font-semibold text-black-1">Outdoor entertainment</p>
                     <p class="text-black-1/80">The pool, BBQ area and outdoor seating are great for summer trips.</p>
@@ -227,7 +227,52 @@
       </div>
       <!---- Property Features end ----->
 
+      <!---- More details---->
+      <div class=" flex items-start flex-col w-full mt-8 pb-12 font-heading text-black-1 border-b border-black-1/10">
+        <div><p>
+          Escape to Villa Mehfil, a character-filled private pool villa in central Lonavala, close to Lonavala Lake and Tungarli Dam. Designed for families and close friends, this 3-bedroom home blends a refreshing private pool, poolside gazebo, leafy garden, stylish living spaces and an eclectic in-house bar. Sleeps 6 on three double beds; floor mattresses are provided for the 7th and 8th guests. Full kitchen, Wi-Fi, AC, parking, pet-friendly stay and self check-in. Hosted by Zen Stays.
+        </p>
+        </div>
+        
+        <div class="mt-6">
+          <p class="font-semibold">The Space...</p>
+        </div>
 
+        <button class="py-3 px-6 mt-4 rounded-xl bg-white-2 hover:bg-light-gray-1 font-bold text-heading duration-100 cursor-pointer text-black-1 transition-all">
+          Show more
+        </button>
+      </div>
+      <!---- More details end---->
+
+      <!--- Property Image---->
+      <div class="flex flex-col w-ful py-12">
+          <div class="flex justify-between">
+              <div>
+                <p class="font-bold text-xl text-black-1">Where you'll sleep</p>
+              </div>
+                <div class=" flex gap-4">
+                  <div class="flex items-center">
+                    <p>1</p> <span>/</span> <p>2</p>
+                  </div>
+                    <div class="flex gap-2">
+                    <div class="w-8 h-8 flex items-center justify-center rounded-full bg-light-gray pr-0.5">
+                     <i class="ph-bold ph-caret-left"></i>
+                    </div>
+                    <div class="w-8 h-8 flex items-center justify-center rounded-full bg-light-gray">
+                      <i class="ph-bold ph-caret-right"></i>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!--- Heading End---->
+
+            <!--- Room Images ---->
+            <div>
+              
+            </div>
+            <!--- Room Images End ---->
+      </div>
+      <!--- Property Image end---->
     
     </div>
     <!---Property details end------------------------->

@@ -58,9 +58,7 @@
 
       <div class="flex flex-1 items-center justify-end gap-2.5">
         <!--- Become a host --->
-        <button class="py-2 px-4 rounded-full hover:bg-white-2 font-bold text-sm duration-100 cursor-pointer text-black-1">
-          Become a host
-        </button>
+        <button class="py-2 px-4 rounded-full hover:bg-white-2 font-bold text-sm duration-100 cursor-pointer text-black-1">Become a host</button>
         <!--- Become a host end--->
         <div class="flex items-center justify-center cursor-pointer w-10 h-10 rounded-full bg-white-1 hover:bg-light-gray-1 text-xl duration-100">
           <i class="ph ph-globe"></i>
@@ -78,8 +76,35 @@
       <!-- globe & menu-->
     </nav>
 
+    <!---- Scroll Navigation ----->
+    <div class="hidden z-10 w-full top-0 left-0 right-0 border-b border-black-1/16 bg-white font-semibold text-black-1" id="top_scroll_nav">
+      <div class="max-w-[1280px] flex items-center justify-start mx-auto gap-5">
+        <div class="group relative cursor-pointer">
+          <div class="h-full relative py-7">Photo</div>
+          <div class="absolute bottom-0 right-0 left-0 w-full h-1 bg-black-1 hidden group-hover:block"></div>
+        </div>
+        <!--- First menu end----->
+        <div class="group relative cursor-pointer">
+          <div class="h-full relative py-7">Amenities</div>
+          <div class="absolute bottom-0 right-0 left-0 w-full h-1 bg-black-1 hidden group-hover:block"></div>
+        </div>
+        <!--- Second menu end----->
+        <div class="group relative cursor-pointer">
+          <div class="h-full relative py-7">Reviews</div>
+          <div class="absolute bottom-0 right-0 left-0 w-full h-1 bg-black-1 hidden group-hover:block"></div>
+        </div>
+        <!--- Second menu end----->
+        <div class="group relative cursor-pointer">
+          <div class="h-full relative py-7">Location</div>
+          <div class="absolute bottom-0 right-0 left-0 w-full h-1 bg-black-1 hidden group-hover:block"></div>
+        </div>
+        <!--- Second menu end----->
+      </div>
+    </div>
+    <!---- Scroll Navigation End ----->
+
     <!---- Property title and images --->
-    <div class="flex flex-col md:px-10 lg:px-20 max-w-[1280px] mx-auto ">
+    <div class="flex flex-col md:px-10 lg:px-20 max-w-[1280px] mx-auto">
       <!--- title and share controles---->
       <div class="w-full flex items-center pt-4">
         <div class="flex-1"><p class="font-bold text-2xl font-heading">Villa Mehfil | 3BR Private Pool, Bar & Garden</p></div>
@@ -140,219 +165,268 @@
 
     <!---- Property title and images end--->
 
-
     <!----- Proeperty details and pricing --------------------------------------------->
     <div class="flex max-w-[1280px] mx-auto px-20">
-    <!---- Property details -------------------------->  
-    <div class="flex flex-2 flex-col">
-      <!-- Title -->
-      <div class="flex flex-col py-6">
-        <p class="font-bold text-xl font-heading text-black-1">Entire home in Lonavala, India</p>
-        <p class="flex items-center gap-1 font-heading">8 guests <span>·</span> 3 bedrooms <span>·</span> 3 beds <span>·</span> 4 bathrooms</p>
-      </div>
-      <!-- Title end -->
+      <!---- Property details -------------------------->
+      <div class="flex flex-2 flex-col">
+        <!-- Title -->
+        <div class="flex flex-col py-6">
+          <p class="font-bold text-xl font-heading text-black-1">Entire home in Lonavala, India</p>
+          <p class="flex items-center gap-1 font-heading">8 guests <span>·</span> 3 bedrooms <span>·</span> 3 beds <span>·</span> 4 bathrooms</p>
+        </div>
+        <!-- Title end -->
 
-      <div class="flex items-center justtify-center px-7 py-6 border gap-6 border-light-gray-1 rounded-xl">
-        <!--- BAdge-->
-        <div class="flex items-center gap-6">
-          <div class="max-w-32"><img src="image/Badge.svg" alt="Badge"></div>
+        <div class="flex items-center justtify-center px-7 py-6 border gap-6 border-light-gray-1 rounded-xl">
+          <!--- BAdge-->
+          <div class="flex items-center gap-6">
+            <div class="max-w-32"><img src="image/Badge.svg" alt="Badge" /></div>
+            <div>
+              <p class="font-heading text-sm leading-[126%] font-semibold text-black-1">One of the most loved homes on Airbnb, according to guests</p>
+            </div>
+          </div>
+
+          <!----Rating----->
+          <div class="flex flex-col items-center justify-center">
+            <p class="font-semibold text-lg font-heading text-black-1">4.9</p>
+            <div class="flex items-center justify-center">
+              <div class="text-xs"><i class="ph-fill ph-star"></i></div>
+              <div class="text-xs"><i class="ph-fill ph-star"></i></div>
+              <div class="text-xs"><i class="ph-fill ph-star"></i></div>
+              <div class="text-xs"><i class="ph-fill ph-star"></i></div>
+            </div>
+          </div>
+          <div class="h-full border border-light-gray"></div>
+
+          <!----Reviews----->
+          <div class="flex flex-col items-center justify-center">
+            <p class="font-semibold text-lg font-heading text-black-1">21</p>
+            <p class="font-heading text-xs font-semibold">Reviews</p>
+          </div>
+        </div>
+        <!-- Badge  and review end -->
+
+        <!---- Hosted --->
+        <div class="flex gap-6 mt-8 py-6 border-b border-t border-black-1/10">
+          <div class="relative">
+            <img src="image/Profile.avif" alt="hosted" class="w-10 rounded-full" />
+            <img src="image/a.svg" alt="profile badge" class="w-4 absolute bottom-0 right-0" />
+          </div>
+
           <div>
-            <p class="font-heading text-sm leading-[126%] font-semibold text-black-1">One of the most loved homes on Airbnb, according to guests</p>
-          </div>
-        </div>
-
-        <!----Rating----->
-        <div class="flex flex-col items-center justify-center">
-          <p class="font-semibold text-lg font-heading text-black-1">4.9</p>
-          <div class="flex items-center justify-center">
-            <div class="text-xs"><i class="ph-fill ph-star"></i></div>
-            <div class="text-xs"><i class="ph-fill ph-star"></i></div>
-            <div class="text-xs"><i class="ph-fill ph-star"></i></div>
-            <div class="text-xs"><i class="ph-fill ph-star"></i></div>
-          </div>
-        </div>
-        <div class="h-full border border-light-gray"></div>
-
-        <!----Reviews----->
-        <div class="flex flex-col items-center justify-center">
-          <p class="font-semibold text-lg font-heading text-black-1">21</p>
-          <p class="font-heading text-xs font-semibold">Reviews</p>
-      </div>
-      </div>
-      <!-- Badge  and review end -->
-
-      <!---- Hosted --->
-      <div class="flex gap-6 mt-8 py-6 border-b border-t border-black-1/10">
-        <div class="relative">
-          <img src="image/Profile.avif" alt="hosted" class="w-10 rounded-full">
-          <img src="image/a.svg" alt="profile badge" class="w-4 absolute bottom-0 right-0">
-        </div>
-
-        <div>
             <p class="font-semibold">Hosted by Amit</p>
             <p class="text-black-1/80">Superhost <span> · </span> 4 years hosting</p>
+          </div>
         </div>
-      </div>
-      <!---- Hosted end--->
+        <!---- Hosted end--->
 
-      <!---- Property Features ----->
-      <div class="w-full flex flex-col gap-6 py-8 font-heading border-b border-black-1/10">
-        <!----- First------>
-         <div class="flex gap-6">
-              <div><img src="image/www.airbnb.co.in-12.svg" alt="Fire icon" class="w-6"></div>
-              <div class="flex flex-col text-sm gap-0.5">
-                    <p class="font-semibold text-black-1">Outdoor entertainment</p>
-                    <p class="text-black-1/80">The pool, BBQ area and outdoor seating are great for summer trips.</p>
-              </div>
-         </div>
-         <!---- First End ---->
-        <!----- Second------>
-         <div class="flex gap-6">
-              <div><img src="image/www.airbnb.co.in-13.svg" alt="Fire icon" class="w-6"></div>
-              <div class="flex flex-col text-sm gap-0.5">
-                    <p class="font-semibold text-black-1">Outdoor entertainment</p>
-                    <p class="text-black-1/80">The pool, BBQ area and outdoor seating are great for summer trips.</p>
-              </div>
-         </div>
-         <!---- Second End ---->
-        <!----- Third------>
-         <div class="flex gap-6">
-              <div><img src="image/www.airbnb.co.in-12.svg" alt="Fire icon" class="w-6"></div>
-              <div class="flex flex-col text-sm gap-0.5">
-                    <p class="font-semibold text-black-1">Outdoor entertainment</p>
-                    <p class="text-black-1/80">The pool, BBQ area and outdoor seating are great for summer trips.</p>
-              </div>
-         </div>
-         <!---- Third End ---->
-      </div>
-      <!---- Property Features end ----->
-
-      <!---- More details---->
-      <div class=" flex items-start flex-col w-full mt-8 pb-12 font-heading text-black-1 border-b border-black-1/10">
-        <div><p>
-          Escape to Villa Mehfil, a character-filled private pool villa in central Lonavala, close to Lonavala Lake and Tungarli Dam. Designed for families and close friends, this 3-bedroom home blends a refreshing private pool, poolside gazebo, leafy garden, stylish living spaces and an eclectic in-house bar. Sleeps 6 on three double beds; floor mattresses are provided for the 7th and 8th guests. Full kitchen, Wi-Fi, AC, parking, pet-friendly stay and self check-in. Hosted by Zen Stays.
-        </p>
-        </div>
-        
-        <div class="mt-6">
-          <p class="font-semibold">The Space...</p>
-        </div>
-
-        <button class="py-3 px-6 mt-4 rounded-xl bg-white-2 hover:bg-light-gray-1 font-bold text-heading duration-100 cursor-pointer text-black-1 transition-all">
-          Show more
-        </button>
-      </div>
-      <!---- More details end---->
-
-      <!--- Property Image---->
-      <div class="flex flex-col w-ful py-12">
-          <div class="flex justify-between">
-              <div>
-                <p class="font-bold text-xl text-black-1">Where you'll sleep</p>
-              </div>
-                <div class=" flex gap-4">
-                  <div class="flex items-center">
-                    <p>1</p> <span>/</span> <p>2</p>
-                  </div>
-                    <div class="flex gap-2">
-                    <div class="w-8 h-8 flex items-center justify-center rounded-full bg-light-gray pr-0.5">
-                     <i class="ph-bold ph-caret-left"></i>
-                    </div>
-                    <div class="w-8 h-8 flex items-center justify-center rounded-full bg-light-gray">
-                      <i class="ph-bold ph-caret-right"></i>
-                    </div>
-                  </div>
-                </div>
+        <!---- Property Features ----->
+        <div class="w-full flex flex-col gap-6 py-8 font-heading border-b border-black-1/10">
+          <!----- First------>
+          <div class="flex gap-6">
+            <div><img src="image/www.airbnb.co.in-12.svg" alt="Fire icon" class="w-6" /></div>
+            <div class="flex flex-col text-sm gap-0.5">
+              <p class="font-semibold text-black-1">Outdoor entertainment</p>
+              <p class="text-black-1/80">The pool, BBQ area and outdoor seating are great for summer trips.</p>
             </div>
-            <!--- Heading End---->
+          </div>
+          <!---- First End ---->
+          <!----- Second------>
+          <div class="flex gap-6">
+            <div><img src="image/www.airbnb.co.in-13.svg" alt="Fire icon" class="w-6" /></div>
+            <div class="flex flex-col text-sm gap-0.5">
+              <p class="font-semibold text-black-1">Outdoor entertainment</p>
+              <p class="text-black-1/80">The pool, BBQ area and outdoor seating are great for summer trips.</p>
+            </div>
+          </div>
+          <!---- Second End ---->
+          <!----- Third------>
+          <div class="flex gap-6">
+            <div><img src="image/www.airbnb.co.in-12.svg" alt="Fire icon" class="w-6" /></div>
+            <div class="flex flex-col text-sm gap-0.5">
+              <p class="font-semibold text-black-1">Outdoor entertainment</p>
+              <p class="text-black-1/80">The pool, BBQ area and outdoor seating are great for summer trips.</p>
+            </div>
+          </div>
+          <!---- Third End ---->
+        </div>
+        <!---- Property Features end ----->
 
-            <!--- Room Images ---->
+        <!---- More details---->
+        <div class="flex items-start flex-col w-full mt-8 pb-12 font-heading text-black-1 border-b border-black-1/10">
+          <div>
+            <p>
+              Escape to Villa Mehfil, a character-filled private pool villa in central Lonavala, close to Lonavala Lake and Tungarli Dam. Designed for
+              families and close friends, this 3-bedroom home blends a refreshing private pool, poolside gazebo, leafy garden, stylish living spaces
+              and an eclectic in-house bar. Sleeps 6 on three double beds; floor mattresses are provided for the 7th and 8th guests. Full kitchen,
+              Wi-Fi, AC, parking, pet-friendly stay and self check-in. Hosted by Zen Stays.
+            </p>
+          </div>
+
+          <div class="mt-6">
+            <p class="font-semibold">The Space...</p>
+          </div>
+
+          <button
+            class="py-3 px-6 mt-4 rounded-xl bg-white-2 hover:bg-light-gray-1 font-bold text-heading duration-100 cursor-pointer text-black-1 transition-all"
+          >
+            Show more
+          </button>
+        </div>
+        <!---- More details end---->
+
+        <!--- Property Image---->
+        <div class="flex flex-col w-ful py-12 mb-24">
+          <div class="flex justify-between pb-6">
             <div>
-              
+              <p class="font-bold text-xl text-black-1">Where you'll sleep</p>
             </div>
-            <!--- Room Images End ---->
-      </div>
-      <!--- Property Image end---->
-    
-    </div>
-    <!---Property details end------------------------->
-    
-    <!---- Pricing section --------------------------->
-    <div class="sticky flex flex-1 flex-col ml-22 mb-6">
+            <div class="flex gap-4">
+              <div class="flex items-center">
+                <p>1</p>
+                <span>/</span>
+                <p>2</p>
+              </div>
+              <div class="flex gap-2">
+                <div
+                  class="w-8 h-8 flex items-center justify-center rounded-full bg-light-gray hover:bg-light-gray-1 cursor-not-allowed opacity-20 duration-100 pr-0.5"
+                >
+                  <i class="ph-bold ph-caret-left"></i>
+                </div>
 
-      <!--- Pricing fees tag ---->
-      <div class="flex items-center justify-center gap-1 w-full mt-8 mb-6 py-3 bg-white shadow-[0px_4px_26px_rgba(0,0,0,0.1)] rounded-lg">
-          <div><img src="image/main__lottie_element_2.svg" class="w-8"></div>
-          <p class="font-heading text-sm font-semibold">Prices include all fees</p>
-      </div>
-      <!---- Pricing fees tag end ---->
+                <div class="w-8 h-8 flex items-center justify-center rounded-full bg-light-gray hover:bg-light-gray-1 cursor-pointer duration-100">
+                  <i class="ph-bold ph-caret-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--- Heading End---->
 
-      <!--- Reserve Card--->
-        <div class="flex  flex-col p-6 bg-white shadow-[0px_4px_24px_rgba(0,0,0,0.08)] rounded-lg">
+          <!--- Room Images ---->
+          <div class="flex gap-2 overflow-hidden max-w-2xl">
+            <!---First card -->
+            <div class="flex flex-col w-full min-w-82 p-1 cursor-pointer">
+              <div class="w-full">
+                <img src="image/Bed_1.avif" alt="Bed 1" class="bg-cover bg-no-repeat rounded-lg" />
+              </div>
+              <div class="flex flex-col w-full mt-3">
+                <p class="font-semibold text-black-1">Bedroom 1</p>
+                <p class="text-sm text-black-1/80">1 king bed</p>
+              </div>
+            </div>
+            <!--- First Card End--->
+            <!---Second card -->
+            <div class="flex flex-col w-full min-w-82 p-1 cursor-pointer">
+              <div class="w-full">
+                <img src="image/Bed_2.avif" alt="Bed 1" class="bg-cover bg-no-repeat rounded-lg" />
+              </div>
+              <div class="flex flex-col w-full mt-3">
+                <p class="font-semibold text-black-1">Bedroom 2</p>
+                <p class="text-sm text-black-1/80">1 king bed</p>
+              </div>
+            </div>
+            <!--- Second Card End--->
+            <!---Third card -->
+            <div class="flex flex-col w-full min-w-82 p-1 cursor-pointer">
+              <div class="w-full">
+                <img src="image/Bed_3.avif" alt="Bed 1" class="bg-cover bg-no-repeat rounded-lg" />
+              </div>
+              <div class="flex flex-col w-full mt-3">
+                <p class="font-semibold text-black-1">Bedroom 3</p>
+                <p class="text-sm text-black-1/80">1 king bed</p>
+              </div>
+            </div>
+            <!--- Third Card End--->
+          </div>
+          <!--- Room Images End ---->
+        </div>
+        <!--- Property Image end---->
+      </div>
+      <!---Property details end------------------------->
+
+      <!---- Pricing section --------------------------->
+      <div class="relative flex flex-1 flex-col ml-22 mb-6">
+        <div class="sticky top-20" id="sticky_section">
+          <!--- Pricing fees tag ---->
+          <div class="flex items-center justify-center gap-1 w-full mt-8 mb-6 py-3 bg-white shadow-[0px_4px_26px_rgba(0,0,0,0.1)] rounded-lg">
+            <div><img src="image/main__lottie_element_2.svg" class="w-8" /></div>
+            <p class="font-heading text-sm font-semibold">Prices include all fees</p>
+          </div>
+          <!---- Pricing fees tag end ---->
+
+          <!--- Reserve Card--->
+          <div class="flex flex-col p-6 bg-white shadow-[0px_4px_24px_rgba(0,0,0,0.08)] rounded-lg">
             <div class="flex flex-start items-center mb-6">
-                <p class="flex gap-1 items-baseline font-heading text-[22px] text-black-1 font-bold"> <span class="underline">₹29,872</span><span class="text-base font-normal">for 2 nights</span></p>
+              <p class="flex gap-1 items-baseline font-heading text-[22px] text-black-1 font-bold">
+                <span class="underline">₹29,872</span><span class="text-base font-normal">for 2 nights</span>
+              </p>
             </div>
 
             <!---- Date selection---->
             <div class="rounded-xl border border-black-1/60">
-               <div class="flex font-heading border-b border-b-black-1/60">
-                        <!-- Check in --->
-                       <div class="flex flex-col flex-1 text-sm py-2 px-3 border-r br-black-1/60 gap-0.5">
-                         <p class="uppercase text-[11px] font-extrabold text-black-1">check-in</p>
-                         <p class="font-medium tracking-wide text-black">11/15/2026</p>
-                       </div>
-                       <!---Check-in end ---->
-
-                       <!-- Check out --->
-                       <div class="flex flex-col flex-1 text-sm py-2 px-3 gap-0.5">
-                         <p class="uppercase text-[11px] font-extrabold text-black-1">checkout</p>
-                         <p class="font-medium tracking-wide text-black">13/15/2026</p>
-                       </div>
-                       <!---Check-out end ---->
-               </div>
-               <!-- Guest--->
-               <div class="w-full font-heading flex items-center">
-                     <div class="flex flex-col flex-1 text-sm py-2 px-3 gap-0.5">
-                         <p class="uppercase text-[11px] font-bold text-black-1">Guest</p>
-                          <p class="font-medium tracking-wide text-black">13/15/2026</p>
-                       </div>
-
-                       <div class="text-lg mx-4">
-                        <i class="ph-bold ph-caret-down"></i>
-                       </div>
+              <div class="flex font-heading border-b border-b-black-1/60">
+                <!-- Check in --->
+                <div class="flex flex-col flex-1 text-sm py-2 px-3 border-r br-black-1/60 gap-0.5">
+                  <p class="uppercase text-[11px] font-extrabold text-black-1">check-in</p>
+                  <p class="font-medium tracking-wide text-black">11/15/2026</p>
                 </div>
-               <!--- Guest End---->
+                <!---Check-in end ---->
+
+                <!-- Check out --->
+                <div class="flex flex-col flex-1 text-sm py-2 px-3 gap-0.5">
+                  <p class="uppercase text-[11px] font-extrabold text-black-1">checkout</p>
+                  <p class="font-medium tracking-wide text-black">13/15/2026</p>
+                </div>
+                <!---Check-out end ---->
+              </div>
+              <!-- Guest--->
+              <div class="w-full font-heading flex items-center">
+                <div class="flex flex-col flex-1 text-sm py-2 px-3 gap-0.5">
+                  <p class="uppercase text-[11px] font-bold text-black-1">Guest</p>
+                  <p class="font-medium tracking-wide text-black">13/15/2026</p>
+                </div>
+
+                <div class="text-lg mx-4">
+                  <i class="ph-bold ph-caret-down"></i>
+                </div>
+              </div>
+              <!--- Guest End---->
             </div>
             <!---- Date selection end---->
-            
+
             <!-- Offer tag --->
-             <div class="w-full text-xs text-center font-heading p-2 rounded-lg text-color-black-1 bg-white-1 my-4">
-                <p class="font-medium">Free cancellation before <span class="font-semibold">9 November</span></p>
-             </div>
+            <div class="w-full text-xs text-center font-heading p-2 rounded-lg text-color-black-1 bg-white-1 my-4">
+              <p class="font-medium">Free cancellation before <span class="font-semibold">9 November</span></p>
+            </div>
             <!-- Offer tag end--->
 
-            
-              <button class="w-full py-3 px-6 bg-dark-pink font-semibold text-white rounded-full cursor-pointer transition-all duration-100 hover:bg-dark-pink/90"> Reserve </button>
+            <button
+              class="w-full py-3 px-6 bg-dark-pink font-semibold text-white rounded-full cursor-pointer transition-all duration-100 hover:bg-dark-pink/90"
+            >
+              Reserve
+            </button>
 
+            <div class="w-full text-center font-heading font-medium text-sm text-black-1 mt-4">
+              <p>You won't be charged yet</p>
+            </div>
+          </div>
+          <!--- Reserve Card end--->
 
-              <div class="w-full text-center font-heading font-medium text-sm text-black-1 mt-4">
-                <p>You won't be charged yet</p>
-              </div>
+          <!---- Report ---->
+          <div class="flex items-center justify-center gap-4 mt-4 font-heading cursor-pointer">
+            <span><i class="ph-duotone ph-flag-checkered"></i></span>
+            <p class="font-semibold underline text-sm">Report this listing</p>
+          </div>
+          <!---- Report End ---->
         </div>
-       <!--- Reserve Card end--->
+      </div>
+      <!---- Pricing section end ----------------------->
+      <!----- Proeperty details and pricing end-------------------------------------------->
+    </div>
 
-       <!---- Report ---->
-       <div class="flex items-center justify-center gap-4 mt-4 font-heading cursor-pointer">
-        <span><i class="ph-duotone ph-flag-checkered"></i></span> <p class="font-semibold underline text-sm">Report this listing</p>
-       </div>
-       <!---- Report End ---->
-
-
-    </div>`
-    <!---- Pricing section end ----------------------->
-    <!----- Proeperty details and pricing end-------------------------------------------->
-
-    
-
+    <div class="w-full h-screen">
+      <div class="max-w-[1280px] mx-auto h-full">
+        <p class="text-3xl font-semibold">this is the last section of the page</p>
+      </div>
+    </div>
   </body>
 </html>

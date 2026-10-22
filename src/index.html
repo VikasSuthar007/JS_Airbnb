@@ -78,26 +78,53 @@
 
     <!---- Scroll Navigation ----->
     <div class="hidden z-10 w-full top-0 left-0 right-0 border-b border-black-1/16 bg-white font-semibold text-black-1" id="top_scroll_nav">
-      <div class="max-w-[1280px] flex items-center justify-start mx-auto gap-5">
-        <div class="group relative cursor-pointer">
-          <div class="h-full relative py-7">Photo</div>
-          <div class="absolute bottom-0 right-0 left-0 w-full h-1 bg-black-1 hidden group-hover:block"></div>
+      <div class="max-w-[1280px] flex items-center justify-between mx-auto gap-5">
+        <div class="flex gap-5 flex-2">
+          <div class="group relative cursor-pointer">
+            <div class="h-full relative py-7">Photo</div>
+            <div class="absolute bottom-0 right-0 left-0 w-full h-1 bg-black-1 hidden group-hover:block"></div>
+          </div>
+          <!--- First menu end----->
+          <div class="group relative cursor-pointer">
+            <div class="h-full relative py-7">Amenities</div>
+            <div class="absolute bottom-0 right-0 left-0 w-full h-1 bg-black-1 hidden group-hover:block"></div>
+          </div>
+          <!--- Second menu end----->
+          <div class="group relative cursor-pointer">
+            <div class="h-full relative py-7">Reviews</div>
+            <div class="absolute bottom-0 right-0 left-0 w-full h-1 bg-black-1 hidden group-hover:block"></div>
+          </div>
+          <!--- Second menu end----->
+          <div class="group relative cursor-pointer">
+            <div class="h-full relative py-7">Location</div>
+            <div class="absolute bottom-0 right-0 left-0 w-full h-1 bg-black-1 hidden group-hover:block"></div>
+          </div>
         </div>
-        <!--- First menu end----->
-        <div class="group relative cursor-pointer">
-          <div class="h-full relative py-7">Amenities</div>
-          <div class="absolute bottom-0 right-0 left-0 w-full h-1 bg-black-1 hidden group-hover:block"></div>
+        <!--- NAV Pricing and Chaging CTA-->
+        <div class="hidden flex-1gap-2 items-center justify-center gap-2" id="reserve">
+          <div class="flex flex-col min-w-40">
+            <p>Add dates for prices</p>
+
+            <div class="flex items-center gap-2">
+              <div class="flex items-center text-sm gap-1">
+                <div class="text-xs flex"><i class="ph-fill ph-star"></i></div>
+                <p class="text-sm text-black-1">4.83</p>
+              </div>
+              <div class="flex items-center gap-1">
+                <span>·</span>
+                <p class="text-sm font-regular text-black-1/60">23 reviews</p>
+              </div>
+            </div>
+          </div>
+          <!--- text & rating END ---->
+          <!--change dates CTA START-->
+          <button
+            class="w-full py-3 px-6 bg-dark-pink font-semibold text-white rounded-full cursor-pointer transition-all duration-100 hover:bg-dark-pink/90"
+          >
+            Reserve
+          </button>
         </div>
-        <!--- Second menu end----->
-        <div class="group relative cursor-pointer">
-          <div class="h-full relative py-7">Reviews</div>
-          <div class="absolute bottom-0 right-0 left-0 w-full h-1 bg-black-1 hidden group-hover:block"></div>
-        </div>
-        <!--- Second menu end----->
-        <div class="group relative cursor-pointer">
-          <div class="h-full relative py-7">Location</div>
-          <div class="absolute bottom-0 right-0 left-0 w-full h-1 bg-black-1 hidden group-hover:block"></div>
-        </div>
+        <!--- NAV Pricing and Chaging CTA END-->
         <!--- Second menu end----->
       </div>
     </div>
